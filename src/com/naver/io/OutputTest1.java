@@ -12,7 +12,7 @@ public class OutputTest1 {
 		FileWriter fw=null;
 		
 		try {
-			//fw = new FileWriter(file);
+			//fw = new FileWriter(file); // false와 같다.
 			fw = new FileWriter(file,false); 
 			//true면 기존의 파일에 내용을 추가한다. false면 위의 내용으로 파일내용이 전체교체된다.
 			fw.write(str);

@@ -19,11 +19,11 @@ public class FileTest4 {
 		//파일의 내용을 읽어오기
 		try {
 			fr = new FileReader(file);  //파일경로를 읽겠다.
-			br = new BufferedReader(fr); 
+			br = new BufferedReader(fr); //char로 받겠다?
 			
 			boolean check =true;
 			while(check) {
-				String str = br.readLine();
+				String str = br.readLine();  //한줄씩 받겠다.
 				if(str==null) { 
 					//엔터키들어있는 것은 null아니다.
 					//키보드로 이동가능한 곳은 null아니다.
