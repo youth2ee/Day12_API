@@ -13,7 +13,7 @@ public class OutputTest2 {
 		FileWriter fw = null;
 		
 		try {
-			fw = new FileWriter(file,true);
+			fw = new FileWriter(file,true); //내용이 있다면 내용에 추가한다.
 
 			boolean check = true;
 			while(check) {

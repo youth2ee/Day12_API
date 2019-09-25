@@ -11,11 +11,11 @@ public class InputTest1 {
 		System.out.println("한글자입력");
 
 		//스캐너없이 한글자 받기
-		InputStream io =System.in; //바이트를 받는다.
+		InputStream io = System.in; //바이트를 받는다.
 		//1바이트씩 처리한다. 글자하나하면 2번처리해야한다. 
 
 		InputStreamReader ir = new InputStreamReader(io); //char타입으로 바꿔준다.
-		BufferedReader br = new BufferedReader(ir); //보조스트림 단독은 사용X
+		BufferedReader br = new BufferedReader(ir); //string타입으로 바꿔준다. 보조스트림 단독은 사용X
 
 		//한글자씩 읽기
 		/*

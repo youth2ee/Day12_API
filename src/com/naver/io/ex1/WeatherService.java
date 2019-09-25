@@ -50,7 +50,7 @@ public class WeatherService {
 	
 				//while(st.hasMoreTokens()) { //while문 안써도 어짜피 한번밖에 안돈다.
 				// 한줄 받아서 아래를 돌리고 바로 위로 올라가서 다음 줄을 받기 때문에 while문 필요없다.
-					weathers.add(weather); //어짜피 그 주소를 받는것이므로 위에서 받아도 된다.
+					weathers.add(weather); //어짜피 그 주소를 받는것이므로 주소받고 아래에서 파싱해서 각각 넣어도 됨
 			
 					weather.setCity(st.nextToken().trim().toUpperCase());
 					weather.setGion(Double.parseDouble(st.nextToken().trim()));
